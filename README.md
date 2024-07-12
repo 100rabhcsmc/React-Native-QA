@@ -2,13 +2,13 @@
 
 ### 1. What is JSX ?
 
-1.JSX Stand for Javascript XML
-2.JSX allow us to write HTML element with javascript code
-3.JSX allow us to use html in javascript
+1. JSX Stand for Javascript XML
+2. JSX allow us to write HTML element with javascript code
+3. JSX allow us to use html in javascript
 
-### 2. How do you create a component in React Native ?
+### 2. How do you create a component in React Native?
 
-To create a component in react native, you define a javascript function or class that returns jsx element
+To create a component in react native, you define a javascript function or class that returns jsx element.
 for example
 
 ```JS
@@ -25,20 +25,19 @@ const NewComponent = () ={
 export default NewComponent;
 ```
 
-### 3. What does the render method in React Native component ?
+### 3. What does the render method in React Native component?
 
-Render in React Native is a fundamental part of class components. It is used to display the component on the UI returned as HTML or JSX components
+Render in React Native is a fundamental part of class components. It is used to display the component on the UI returned as HTML or JSX components.
 
-### 4. What is Props ?
+### 4. What is Props?
 
-Props stand for Properties and is being used to pass data from one component ot another component basically from parent componenet to child component
-
-Props are read-only
+Props stand for Properties and is being used to pass data from one component ot another component basically from parent componenet to child component.
+Props are read-only.
 
 ### 5. What is State ?
 
-State is a javascript object that holds data and information about the component. It is used to keep track
-state is the place
+State is a javascript object that holds data and information about the component. It is used to keep track.
+state is the place where data come from.
 
 ### 6. diffenece between props and state ?
 
