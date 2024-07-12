@@ -51,23 +51,31 @@ state is the place where data come from.
 
 ### 7. how do you handle user input using react native?
 
-User input in React Native can be handled using various event handlers like 'onPress', 'onChangeText', 'onSubmitEditing', etc.
-Example:
+TextInput is a Core Component that allows the user to enter text. It has an onChangeText prop that takes a function to be called every time the text changes, and an onSubmitEditing prop that takes a function to be called when the text is submitted.
 
 ```Js
-import React from 'react';
-import {SafeAreaView, StyleSheet, TextInput} from 'react-native';
+import React, { useState } from 'react';
+import { Text, TextInput, View } from 'react-native';
 
-const MyComponent = () => {
-    const handleBtn = ()=>{
-        console.log("pressed")
-    }
-  return (
-      <TextInput
-        onPress={handleBtn}
-      />
-  );
-};
+const PizzaTranslator = () => {
+ const [text, setText] = useState('');
+ return (
+   <View style={{padding: 10}}>
+     <TextInput
+       style={{height: 40}}
+       placeholder="Type here to translate!"
+       onChangeText={text => setText(text)}
+       defaultValue={text}
+     />
+     <Text style={{padding: 10, fontSize: 42}}>
+       {text.split(' ').map((word) => word && '🍕').join(' ')}
+     </Text>
+   </View>
+ );
+}
+
+export default PizzaTranslator;
+
 ```
 
 ### 8. Explain the React Native component lifecycle?
@@ -82,3 +90,45 @@ The component is created and inserted into the DOM
 it receives new props or states and updates accordingly.
 **unmounting**
 the component is removed from the DOM.
+
+### 9. Explain the concept of 'flexbox' and its role in React Native layout.
+
+'Flexbox' is a layout model that allows you to distribute space and align-items within a container.
+Flexbox is used to make responsive design
+_Key concepts and properties of Flexbox in React Native:
+• Flex
+• FlexDirection
+• JustifyContent
+• Align-Items_
+
+### 10. How can you make a network request in React Native?
+
+Network requests in React Native are typically made using the 'fetch' API or third-party libraries like Axios.
+
+### 11. Describe the purpose of 'AsyncStorage' in React Native.
+
+'AsyncStorage' is an API in React Native for asynchronous, unencrypted, and persistent storage of small amounts of data.
+It's often used to store settings, preferences, or authentication tokens locally on the user's device.
+
+### 12. what is HOC
+
+HOC stand for Higher order component.
+HOC is an advanced technique for reusing component logic.
+It is a function that takes a component and returns a new component.
+
+### 13. How can you integrate third-party libraries in a React Native app?
+
+Third-party libraries can be integrated using package managers like npm or yarn.
+
+### 14. What are threads in General ? and explain Different Threads in ReactNative with Use of Each?
+
+React Native right now uses 3 threads:
+**MAIN/UI Thread** — This is the main application thread on which your Android/iOS app is running. The UI of the application can be changed by the Main thread and it has access to it .
+
+**Shadow Thread** — layout created using React library in React Native can be calculated by this and it is a background thread.
+
+**JavaScript Thread** — The main Javascript code is executed by this thread.
+
+### 15. What is Props Drilling and how can we avoid it?
+
+Props Drilling (Threading) is a concept that refers to the process you pass the data from the parent component to the exact child Component BUT in between, other components owning the props just to pass it down the chain.
