@@ -132,3 +132,17 @@ React Native right now uses 3 threads:
 ### 15. What is Props Drilling and how can we avoid it?
 
 Props Drilling (Threading) is a concept that refers to the process you pass the data from the parent component to the exact child Component BUT in between, other components owning the props just to pass it down the chain.
+
+### 16. Redux in details
+
+Redux is an open-source JavaScript library for managing the state of an application.
+All the data are store in the one single container the container is called Redux.
+
+**Actions**: are payloads of information that send data from your application to your store.
+
+**Reducers**:when an action is dispatched for state change its the reducers duty to make the necessary changes to the state and return the new state of the application.
+
+**Store**: a store can be created with help of reducers which holds the entire state of the application. The recommended way is to use a single store for the entire application rather than having multiple stores which will violate the use of redux which only has a single store.
+
+**Components**: this is where the UI of the application is kept.
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/redux.png)
