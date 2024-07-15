@@ -207,3 +207,22 @@ setInterval(() => {
 //this will print continue after 1 second
 
 ```
+
+### 21. DOM & Virtual DOM
+
+**DOM**
+DOM stands for Document Object Model.
+It represents the entire UI of the web application as a tree data structure.
+
+In simpler terms, it is a structural representation of the HTML elements of the web application.
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/dom.png)
+
+> This is the DOM
+
+**Virtual DOM**
+To make the performance of the Real DOM better and faster, the concept of Virtual DOM arrives. The Virtual DOM is nothing but the virtual representation of the DOM.
+
+> But the key difference is, every time with every change , the virtual DOM gets updated instead of the real DOM.
+
+Simple and best explanation about [The DOM and Virtual DOM](https://dev.to/swarnaliroy94/introduction-to-react-real-dom-virtual-dom-363)
