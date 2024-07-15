@@ -226,3 +226,19 @@ To make the performance of the Real DOM better and faster, the concept of Virtua
 > But the key difference is, every time with every change , the virtual DOM gets updated instead of the real DOM.
 
 Simple and best explanation about [The DOM and Virtual DOM](https://dev.to/swarnaliroy94/introduction-to-react-real-dom-virtual-dom-363)
+
+### 22. ScrollView and Flatlist
+
+**ScrollView**
+The ScrollView Component is an inbuilt react-native component that serves as a generic scrollable container, with the ability to scroll child components and views inside it.
+
+**Flatlist**
+The FlatList Component is an inbuilt react-native component that displays similarly structured data in a scrollable list. It shows only those elements that are currently being displayed on the screen.
+
+|                        ScrollView                        |                 FlatList                 |
+| :------------------------------------------------------: | :--------------------------------------: |
+|            It loads all the content at once.             | It loads content as the window scrolled. |
+| It results in slow rendering and increased memory usage. | It does not affect the rendering speed.  |
+|        It does not provide any memory management.        | It provides automatic memory management. |
+|             build in pull-to-refresh support             |      require custume implementation      |
+|             header,footer,seperator support              |   header,footer,seperator not support    |
