@@ -146,3 +146,64 @@ All the data are store in the one single container the container is called Redux
 
 **Components**: this is where the UI of the application is kept.
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](/redux.png)
+
+### 17. useState Hooks
+
+the useState is a function which takes one argument and return a current state and the lets you update it
+
+### 18. useEffect
+
+useEffect is a hook,basically useEffect tell component need to do something after render method.
+
+```
+useEffect(()=>{
+ setTimeout(()=>{
+  console.log("hello")
+ },1000)
+})
+
+//hello print every time after 1 second
+
+useEffect(()=>{
+ setTimeout(()=>{
+  console.log("hello")
+ },1000)
+},[])
+
+//hello print once after the 1 second
+
+useEffect(()=>{
+  setInterval(()=>{
+  console.log("hello)
+  },1000)
+},[])
+
+//hello print continue after 1 second
+```
+
+### 19. setTimeout
+
+setTimeout is a function which takes two arguments, first is a function and second is a time in milliseconds
+
+setTimeout allow to run a function once after the interval of time
+
+```
+setTimeout(() => {
+  console.log("this will print after 1 second");
+}, 1000);
+```
+
+### 20. setInterval
+
+setInterval is a function which takes two arguments, first is a function and second is a time in
+
+setInterval allow to run a function repeatly
+
+```
+setInterval(() => {
+  console.log("this will print after 1 second");
+}, 1000);
+
+//this will print continue after 1 second
+
+```
